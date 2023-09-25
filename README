@@ -1,0 +1,73 @@
+# CSV File Splitter
+
+This Python script is designed to split a CSV file into multiple smaller files, each containing a specified number of rows. It is useful when dealing with large CSV files that need to be processed in smaller chunks.
+
+## Usage
+
+### Prerequisites
+
+Before using this script, make sure you have the following prerequisites in place:
+
+1. Python: This script is written in Python. You need to have Python installed on your system.
+
+2. CSV File: You should have the CSV file that you want to split. Specify the path to this file in the `input_file` variable.
+
+3. Output Directory: You need to specify the directory where the split CSV files will be saved. Create this directory if it doesn't exist and set its path in the `output_directory` variable.
+
+### Running the Script
+
+To split the CSV file, follow these steps:
+
+1. Open a terminal or command prompt.
+
+2. Navigate to the directory containing the script.
+
+3. Run the script by executing the following command:
+
+   ```
+   python main.py
+   ```
+
+### Customization
+
+You can customize the script by modifying the following variables at the beginning of the script:
+
+- `input_file`: The path to the input CSV file you want to split.
+
+- `output_directory`: The path to the directory where the split CSV files will be saved.
+
+- `occurrences_per_file`: The number of rows to include in each split file.
+
+## Function Documentation
+
+### `split_csv_file(input_file, output_directory, occurrences_per_file)`
+
+This function splits a CSV file into multiple smaller files, with each file containing the specified number of rows and having the same header in all of them.
+
+#### Parameters
+
+- `input_file` (str): The path to the input CSV file.
+
+- `output_directory` (str): The path to the output directory where the split files will be saved.
+
+- `occurrences_per_file` (int): The number of rows to include in each split file.
+
+#### Example
+
+```python
+input_file = "input.csv"
+output_directory = "output"
+occurrences_per_file = 100
+split_csv_file(input_file, output_directory, occurrences_per_file)
+```
+
+## License
+
+This script is provided under the [MIT License](LICENSE.md).
+
+## Author
+
+- Author: [Enrico Marquez]
+- Email: [enricovmarquezz@gmail.com]
+
+If you have any questions or encounter issues while using this script, please feel free to contact the author.
